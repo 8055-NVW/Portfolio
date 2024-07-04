@@ -1,0 +1,288 @@
+import { useEffect } from 'react'
+// Animation imports
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+//Asset imports
+import Frogger from '../../assets/Frogger.webm'
+import MovieGallery from '../../assets/MovieGallery.webm'
+import Pedal from '../../assets/Pedal.webm'
+import BlendBay from '../../assets/BlendBay.webm'
+import vite from '../../assets/vite.svg'
+import vscode from '../../assets/vscode.svg'
+import react from '../../assets/react.svg'
+import trello from '../../assets/trello.svg'
+import tableplus from '../../assets/tableplus.svg'
+import sass from '../../assets/sass.svg'
+import python from '../../assets/python3.svg'
+import postman from '../../assets/postman.svg'
+import postgresql from '../../assets/postgresql.svg'
+import netlify from '../../assets/netlify.svg'
+import mongodb from '../../assets/mongodb.svg'
+import materialui from '../../assets/material-ui.svg'
+import jwt from '../../assets/jwt.svg'
+import js from '../../assets/js.svg'
+import insomnia from '../../assets/insomnia.svg'
+import heroku from '../../assets/heroku.svg'
+import django from '../../assets/django.svg'
+import html from '../../assets/html-5.svg'
+import css from '../../assets/css-3.svg'
+import cloudinary from '../../assets/cloudinary.svg'
+import bootstrap from '../../assets/bootstrap.svg'
+import link from '../../assets/link.png'
+import githubwhite from '../../assets/githubwhitesvg.svg'
+
+export default function Projects({ projectsRef }) {
+
+    useEffect(() => {
+        // Animate on scroll effect
+        Aos.init({ duration: 2000 })
+    }, [])
+
+    return (
+        <div ref={projectsRef} className='h-full bg-black flex flex-col items-center pb-5'>
+            <h1 className="text-4xl font-bold underline m-3 mb-[1.5em]  pt-20 text-center text-slate-100">Projects</h1>
+            {/* Frogger */}
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right">
+                <div className='mb-5'>
+                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Frogger</h3>
+                    <h4 className='text-xl'>Solo Project | One Week</h4>
+                    <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
+                        <img className='h-10 p-1' src={html} alt="html" />
+                        <img className='h-10 p-1' src={css} alt="css" />
+                        <img className='h-10 p-1' src={js} alt="js" />
+                        <img className='h-10 p-1' src={netlify} alt="netlify" />
+                    </div>
+                </div>
+                <div className='flex flex-col md:flex-row p-3 md:p-0'>
+                    <div className='mr-5 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            Inspired by the 80s classic arcade game "Frogger" the aim was to incorporate similar elements and visual cues for an authentic experience.
+                        </p>
+                        <p className='md:text-lg'>
+                            Although the visuals were not be the main focus, my primary goal here was to ensure the core functionality of the game is robust and mirrors the original.
+                        </p>
+                    </div>
+                    <div className='flex p-3 md:p-0' >
+                        <video width="2500"
+                            className="object-cover border-2 border-gray-400 rounded-lg"
+                            autoPlay
+                            muted
+                            loop
+                        >
+                            <source src={Frogger} type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+                <div className=' mx-5 my-10 flex items-center justify-center'>
+                    <a href="https://project-1-frogger.netlify.app/" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                Open Project
+                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/8055-NVW/Project-1-Frogger" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                View on GitHub
+                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {/* Movie Gallery */}
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-xl shadow-slate-600' data-aos="fade-left">
+                <div className='mb-5'>
+                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Movie Gallery</h3>
+                    <h4 className='text-xl'>Partner Project | Two Days</h4>
+                    <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
+                        <img className='h-10 p-1' src={html} alt="html" />
+                        <img className='h-10 p-1' src={css} alt="css" />
+                        <img className='h-10 p-1' src={js} alt="js" />
+                        <img className='h-10 p-1' src={vite} alt="vite" />
+                        <img className='h-10 p-1' src={react} alt="react" />
+                        <img className='h-10 p-1' src={bootstrap} alt="bootstrap" />
+                        <img className='h-10 p-1' src={insomnia} alt="insomnia" />
+                        <img className='h-10 p-1' src={netlify} alt="netlify" />
+                    </div>
+                </div>
+                <div className='flex flex-col md:flex-row p-3 md:p-0'>
+                    <div className='flex p-3 md:p-0' >
+                        <video width="2500"
+                            className="object-cover border-2 border-gray-400 rounded-lg"
+                            autoPlay
+                            muted
+                            loop
+                        >
+                            <source src={MovieGallery} type="video/webm" />
+                        </video>
+                    </div>
+                    <div className='ml-5 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            A React based website that consumes an API and utilises Bootstrap Framework.
+                        </p>
+                        <p className='md:text-lg'>
+                            Movie Gallery is a place where users can like movies and add them to their watch lists. We also incorporated a search bar to allow users to filter by category.
+
+                        </p>
+
+                    </div>
+                </div>
+                <div className=' mx-5 my-10 flex items-center justify-center'>
+                    <a href="https://6628db1561b28c07a2f00c15--zesty-cheesecake-010dd6.netlify.app/" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                Open Project
+                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/8055-NVW/Project-2-React-Movie-API/tree/main" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                View on GitHub
+                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {/* Pedal */}
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right">
+                <div className='mb-5'>
+                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Pedal</h3>
+                    <h4 className='text-xl'>Group Project | One Week</h4>
+                    <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
+                        <img className='h-10 p-1' src={html} alt="html" />
+                        <img className='h-10 p-1' src={css} alt="css" />
+                        <img className='h-10 p-1' src={js} alt="js" />
+                        <img className='h-10 p-1' src={vite} alt="vite" />
+                        <img className='h-10 p-1' src={react} alt="react" />
+                        <img className='h-10 p-1' src={sass} alt="sass" />
+                        <img className='h-10 p-1' src={bootstrap} alt="bootstrap" />
+                        <img className='h-10 p-1' src={insomnia} alt="insomnia" />
+                        <img className='h-10 p-1' src={cloudinary} alt="cloudinary" />
+                        <img className='h-10 p-1' src={jwt} alt="jwt" />
+                        <img className='h-10 p-1' src={trello} alt="trello" />
+                        <img className='h-10 p-1' src={heroku} alt="heroku" />
+                    </div>
+                </div>
+                <div className='flex flex-col md:flex-row p-3 md:p-0'>
+                    <div className='mr-5 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            A social network like clone for car enthusiasts.
+                            Pedal lets users add, comment on, like, update, and delete posts, as well as add and delete their cars, which are viewable on their profiles, and follow other users.
+                        </p>
+                        <p className='md:text-lg'>
+
+                            Project 3 introduced new challenges, including our first use of the MERN stack with comprehensive CRUD operations and collaboration in a three-member team,
+                            requiring effective GitHub navigation to enhance both technical skills and teamwork.
+                        </p>
+
+                    </div>
+                    <div className='flex p-3 md:p-0' >
+                        <video width="2500"
+                            className="object-cover border-2 border-gray-400 rounded-lg"
+                            autoPlay
+                            muted
+                            loop
+                        >
+                            <source src={Pedal} type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+                <div className='mx-5 my-10 flex items-center justify-center'>
+                    <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                Open Project
+                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/8055-NVW/Project-3-Pedal" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                View on GitHub
+                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {/* Blend Bay */}
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-left">
+                <div className='mb-5'>
+                    <h3 className='text-3xl mb-4 underline underline-offset-4'>BlendBay</h3>
+                    <h4 className='text-xl'>Solo Project | One Week</h4>
+                    <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
+                        <img className='h-10 p-1' src={html} alt="html" />
+                        <img className='h-10 p-1' src={css} alt="css" />
+                        <img className='h-10 p-1' src={js} alt="js" />
+                        <img className='h-10 p-1' src={python} alt="python" />
+                        <img className='h-10 p-1' src={vite} alt="vite" />
+                        <img className='h-10 p-1' src={react} alt="react" />
+                        <img className='h-10 p-1' src={django} alt="django" />
+                        <img className='h-10 p-1' src={materialui} alt="materialui" />
+                        <img className='h-10 p-1' src={mongodb} alt="mongodb" />
+                        <img className='h-10 p-1' src={postgresql} alt="postgresql" />
+                        <img className='h-10 p-1' src={postman} alt="postman" />
+                        <img className='h-10 p-1' src={tableplus} alt="tableplus" />
+                        <img className='h-10 p-1' src={heroku} alt="heroku" />
+                    </div>
+                </div>
+                <div className='flex flex-col md:flex-row p-3 md:p-0'>
+                    <div className='flex p-3 md:p-0' >
+                        <video width="2500"
+                            className="object-cover border-2 border-gray-400 rounded-lg"
+                            autoPlay
+                            muted
+                            loop
+                        >
+                            <source src={BlendBay} type="video/webm" />
+                        </video>
+                    </div>
+                    <div className='ml-5 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            Blend Bay is a website for shake lovers to like, share, review, and rate shakes of all kinds, inspired by a Banana Vanilla Protein Shake.
+                        </p>
+                        <p className='md:text-lg'>
+                            For my final project, I decided to expand on Project 3, incorporating Python and Django for the back end and React with MaterialUI for the front end,
+                            to create a comprehensive shake website where users can create, update, delete, and favorite shakes.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div className='mx-5 my-10 flex items-center justify-center'>
+                    <a href="https://blend-bay-155603fbccf6.herokuapp.com/" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                Open Project
+                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/8055-NVW/Project-4-Blend-Bay" target="_blank">
+                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                View on GitHub
+                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    )
+}
