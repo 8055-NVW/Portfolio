@@ -40,7 +40,7 @@ export default function Navbar({landingRef,aboutRef,skillsRef,projectsRef,expRef
 
     timeoutRef.current = setTimeout(() => {
       setVisible(false)
-    }, 2000)
+    }, 1500)
 
     return () => {
       if (timeoutRef.current) {

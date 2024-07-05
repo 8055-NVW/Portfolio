@@ -38,10 +38,10 @@ export default function Projects({ projectsRef }) {
     }, [])
 
     return (
-        <div ref={projectsRef} className='h-full bg-black flex flex-col items-center pb-5'>
-            <h1 className="text-4xl font-bold m-3 mb-[1.5em]  pt-14 text-center text-slate-100">Projects</h1>
+        <div ref={projectsRef} className='h-full bg-black flex flex-col items-center pb-10'>
+            <h1 className="page-title text-4xl font-bold m-3 mb-[1.5em]  pt-14 text-center text-slate-100 ">Projects</h1>
             {/* Frogger */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Frogger</h3>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
@@ -53,15 +53,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='mr-5 mb-5 text-center'>
-                        <p className='mb-3 md:text-lg'>
-                            Inspired by the 80s classic arcade game "Frogger" the aim was to incorporate similar elements and visual cues for an authentic experience.
-                        </p>
-                        <p className='md:text-lg'>
-                            Although the visuals were not be the main focus, my primary goal here was to ensure the core functionality of the game is robust and mirrors the original.
-                        </p>
-                    </div>
-                    <div className='flex p-3 md:p-0' >
+                    <div className='flex p-2' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -71,6 +63,15 @@ export default function Projects({ projectsRef }) {
                             <source src={Frogger} type="video/webm" />
                         </video>
                     </div>
+                    <div className='mx-3 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            Inspired by the 80s classic arcade game "Frogger" the aim was to incorporate similar elements and visual cues for an authentic experience.
+                        </p>
+                        <p className='md:text-lg'>
+                            Although the visuals were not be the main focus, my primary goal here was to ensure the core functionality of the game is robust and mirrors the original.
+                        </p>
+                    </div>
+
                 </div>
                 <div className=' mx-5 my-10 flex items-center justify-center'>
                     <a href="https://project-1-frogger.netlify.app/" target="_blank">
@@ -94,7 +95,7 @@ export default function Projects({ projectsRef }) {
                 </div>
             </div>
             {/* Movie Gallery */}
-            <div className=' max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
+            <div className=' max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Movie Gallery</h3>
                     <h4 className='text-xl'>Partner Project | Two Days</h4>
@@ -110,7 +111,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='flex p-3 md:p-0' >
+                    <div className='flex p-2' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -120,7 +121,7 @@ export default function Projects({ projectsRef }) {
                             <source src={MovieGallery} type="video/webm" />
                         </video>
                     </div>
-                    <div className='ml-5 mb-5 text-center'>
+                    <div className='mx-3 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
                             A React-based website that consumes an API and utilizes the Bootstrap framework, Movie Gallery lets users like movies and add them to their watch lists.
                         </p>
@@ -151,7 +152,7 @@ export default function Projects({ projectsRef }) {
                 </div>
             </div>
             {/* Pedal */}
-            <div className='h-full max-w-3xl  flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
+            <div className='h-full max-w-3xl  flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Pedal</h3>
                     <h4 className='text-xl'>Group Project | One Week</h4>
@@ -171,17 +172,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='mr-5 mb-5 text-center'>
-                        <p className='mb-3 md:text-lg'>
-                            Pedal is a social network for car enthusiasts. Users can manage posts, cars, and profiles, and follow others.
-                        </p>
-                        <p className='md:text-lg'>
-
-                            Project 3 introduced the MERN stack, CRUD operations, and teamwork in a three-member team, enhancing skills in GitHub navigation and collaboration.
-                        </p>
-
-                    </div>
-                    <div className='flex p-3 md:p-0' >
+                    <div className='flex p-2' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -191,6 +182,17 @@ export default function Projects({ projectsRef }) {
                             <source src={Pedal} type="video/webm" />
                         </video>
                     </div>
+                    <div className='mx-3 mb-5 text-center'>
+                        <p className='mb-3 md:text-lg'>
+                            Pedal is a social network for car enthusiasts. Users can manage posts, cars, and profiles, and follow others.
+                        </p>
+                        <p className='md:text-lg'>
+
+                            Project 3 introduced the MERN stack, CRUD operations, and teamwork in a three-member team, enhancing skills in GitHub navigation and collaboration.
+                        </p>
+
+                    </div>
+
                 </div>
                 <div className='mx-5 my-10 flex items-center justify-center'>
                     <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
@@ -214,7 +216,7 @@ export default function Projects({ projectsRef }) {
                 </div>
             </div>
             {/* Blend Bay */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>BlendBay</h3>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
@@ -235,7 +237,7 @@ export default function Projects({ projectsRef }) {
                         <img className='h-10 p-1' src={trello} alt="trello" />
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row p-3 md:p-0'>
+                <div className='flex flex-col md:flex-row p-2'>
                     <div className='flex p-3 md:p-0' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
@@ -246,7 +248,7 @@ export default function Projects({ projectsRef }) {
                             <source src={BlendBay} type="video/webm" />
                         </video>
                     </div>
-                    <div className='ml-5 mb-5 text-center'>
+                    <div className='mx-3  mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
                             Blend Bay is a website for shake lovers to review, rate, and favorite shakes.
                         </p>

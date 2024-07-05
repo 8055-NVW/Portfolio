@@ -28,21 +28,21 @@ export default function Landing({ landingRef }) {
     return (
         <>
             <div ref={landingRef} className='min-h-screen h-full w-full flex items-center justify-center flex-col'>
-                <div className='w-full max-w-[1000px]  pb-[.5em] flex flex-col lg:flex-row items-center justify-center'>
+                <div className='w-full max-w-[1000px]  pb-[.5em] flex flex-col  lg:flex-row items-center justify-center'>
                     <div className=' mx-5 w-full'>
                         <h1 id='text' className="landing-text text-5xl  md:text-6xl font-medium text-center text-slate-100 leading-[6rem]">
                             Hi!<br />
                             I'm Vivian
                         </h1>
-                        <h2 className='text-4xl hidden md:block text-center text-slate-100 pt-10'>Full Stack Software Developer</h2>
+                        <h2 className='text-4xl hidden md:hidden lg:block text-center text-slate-100 pt-10'>Full Stack Software Developer</h2>
                     </div>
-                    <div className=' mx-5 w-full flex flex-col justify-center items-center border-l-none border-white md:border-l-4'>
+                    <div className=' mx-5 w-full flex flex-col justify-center items-center border-l-none border-white lg:border-l-4'>
                         <div className="avatar my-5">
                             <div className="w-[17rem] rounded-3xl">
                                 <img src={profilePic} alt='A mug shot of me' />
                             </div>
                         </div>
-                        <h2 className='text-4xl text-center md:hidden text-slate-100 pt-10'>Full Stack Software Developer</h2>
+                        <h2 className='text-4xl text-center lg:hidden text-slate-100 pt-10'>Full Stack Software Developer</h2>
                     </div>
                 </div>
             </div>

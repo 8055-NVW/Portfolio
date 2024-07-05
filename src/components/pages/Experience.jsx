@@ -5,7 +5,7 @@ export default function Experience({ expRef }) {
 
   return (
     <div ref={expRef} className="h-full flex flex-col items-center justify-center py-14">
-      <h1 className="text-4xl  my-4 font-bold text-center text-slate-50">
+      <h1 className="page-title text-4xl  my-4 font-bold text-center text-slate-50">
         Experience
       </h1>
       <div className='w-full  flex flex-row items-center justify-around'>

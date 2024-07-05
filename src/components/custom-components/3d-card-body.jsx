@@ -76,7 +76,7 @@ export default function AnimatedCard() {
                                 className="object-cover rounded-xl group-hover/card:shadow-xl" />
                             <CardItem
                                 translateZ="50"
-                                className="text-sm m-auto font-bold text-slate-100 dark:text-white">
+                                className="text-sm text-center m-auto font-bold text-slate-100 dark:text-white">
                                 {skill.name}
                             </CardItem>
                         </CardItem>
