@@ -39,7 +39,7 @@ export default function Projects({ projectsRef }) {
 
     return (
         <div ref={projectsRef} className='h-full bg-black flex flex-col items-center pb-5'>
-            <h1 className="text-4xl font-bold m-3 mb-[1.5em]  pt-20 text-center text-slate-100">Projects</h1>
+            <h1 className="text-4xl font-bold m-3 mb-[1.5em]  pt-14 text-center text-slate-100">Projects</h1>
             {/* Frogger */}
             <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
