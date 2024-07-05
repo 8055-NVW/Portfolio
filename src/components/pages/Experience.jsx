@@ -1,15 +1,27 @@
-
+import { useState } from 'react'
+import arrowleft from '../../assets/arrowleft.svg'
+import arrowright from '../../assets/arrowright.svg'
 
 export default function Experience({ expRef }) {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const totalSlides = 5
 
+  const handleSlideChange = (index) => {
+    setCurrentSlide(index);
+  };
 
   return (
-    <div ref={expRef} className="h-full flex flex-col items-center pb-20">
-      <h1 className="text-4xl p-5 mt-2 font-bold text-center text-slate-50">
+    <div ref={expRef} className="h-full flex flex-col items-center justify-center pb-20">
+      <h1 className="text-4xl  my-4 font-bold text-center text-slate-50">
         Experience
-        {/* [#00000036]/35 backdrop-blur-md */}
       </h1>
-      <div className=" px-2 carousel carousel-center rounded-box max-w-[95vw]  md:max-w-6xl space-x-4 p-4 bg-">
+      <div className='w-full  flex flex-row items-center justify-around'>
+        <img src={arrowleft} alt="left" className='h-6' />
+        <p className='text-md font-semibold pb-1 px-1'>Swipe</p>
+        <img src={arrowright} alt="right" className='h-6' />
+      </div>
+
+      <div className="w-full px-2 carousel carousel-center rounded-box max-w-[95vw]  md:max-w-6xl space-x-4 p-4 bg-">
         <div className="carousel-item">
           <div className="max-w-[88vw] md:max-w-3xl p-10 bg-[#000000ab] shadow-md mx-5 rounded-box">
             <h3 className="text-3xl font-bold">Software Engineering Immersive Graduate</h3>
