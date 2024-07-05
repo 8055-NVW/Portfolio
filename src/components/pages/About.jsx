@@ -57,14 +57,13 @@ export default function About({ aboutRef }) {
 
     return (
         <div ref={aboutRef} className=" bg-black" >
-            <div className="min-h-screen flex flex-col items-center justify-center">
+            <div className="min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
                 <div>
 
-                <FlipWords className='text-3xl md:text-4xl font-bold m-3 pt-20  text-center' words={words} />
+                <FlipWords className='text-3xl md:text-4xl font-bold m-3   text-center' words={words} />
                 </div>
                 <p className="w-full md:w-2/4 p-5 text-xl font-light text-center text-slate-100 leading-[2rem]">
-                    Innovative and proactive Full-Stack Developer with a solid grasp of software engineering principles.
-                    I thrive in a team and am dedicated to delivering high-quality code and user-friendly designs.
+                I'm an innovative and proactive Full-Stack Developer with a strong grasp of software engineering principles. I love working in teams and am dedicated to delivering high-quality code and user-friendly designs. 
                 </p>
                 <InfiniteMovingCards className='w-screen' items={projects} direction="right" speed="slow" />
                 <p className="w-full lg:w-2/4 p-4 text-xl font-light text-center text-slate-100 leading-[2rem]">

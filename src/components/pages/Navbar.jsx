@@ -55,7 +55,7 @@ export default function Navbar({landingRef,aboutRef,skillsRef,projectsRef,expRef
         <ul className="menu flex-row text-lg font-bold p-0 space-x-4 bg-background/55 backdrop-blur-md">
           <li className='active'><a onClick={()=>handleClick(landingRef)}>Home</a></li>
           <li><a className='nav_link' onClick={()=>handleClick(aboutRef)}>About</a></li>
-          <li><a className='nav_link' onClick={()=>handleClick(skillsRef)}>Skills</a></li>
+          {/* <li><a className='nav_link' onClick={()=>handleClick(skillsRef)}>Skills</a></li> */}
           <li><a className='nav_link' onClick={()=>handleClick(projectsRef)}>Projects</a></li>
           <li><a className='nav_link' onClick={()=>handleClick(expRef)}>Experience</a></li>
           <li><a className='nav_link' onClick={()=>handleClick(contactRef)}>Contact</a></li>

@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
-export const FlipWords = ({ words, duration = 2000, className }) => {
+export const FlipWords = ({ words, duration = 1000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -37,7 +37,7 @@ export const FlipWords = ({ words, duration = 2000, className }) => {
           y: 0,
         }}
         transition={{
-          duration: 0.4,
+          duration: 0.2,
           ease: "easeInOut",
           type: "spring",
           stiffness: 100,
@@ -64,9 +64,9 @@ export const FlipWords = ({ words, duration = 2000, className }) => {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
               delay: index * 0.08,
-              duration: 0.4,
+              duration: 0.2,
             }}
-            className="inline-block underline"
+            className="inline-block"
           >
             {letter === " " ? "\u00A0" : letter}
           </motion.span>

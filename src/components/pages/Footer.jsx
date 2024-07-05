@@ -7,13 +7,13 @@ import emailwhite from '../../assets/email-white.svg'
 import githubwhite from '../../assets/github-white.svg'
 import linkedinwhite from '../../assets/linkedin-white.svg'
 
-export default function Footer({contactRef}) {
+export default function Footer({ contactRef }) {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const myEmail = import.meta.env.VITE_EMAIL 
+    const myEmail = import.meta.env.VITE_EMAIL
     const serviceId = import.meta.env.VITE_SERVICE_ID
     const templateId = import.meta.env.VITE_TEMPLATE_ID
     const publicKey = import.meta.env.VITE_PUBLIC_KEY
@@ -62,11 +62,27 @@ export default function Footer({contactRef}) {
     }
 
     return (
-        <footer ref={contactRef}>
-            <div className=" bg backdrop-blur-md footer p-5 px-8 pb-7 md:footer-center  text-primary-content flex flex-col  md:flex-row items-center justify-center">
-                <div className='bg-[#000000ab] p-5 rounded-xl max-w-[500px]'>
-                    <p className="text-lg font-semibold text-slate-50 w-full text-center">Get in Touch</p>
-                    <p className="text-3xl font-bold text-slate-50 pb-5 w-full text-center">Lets Connect</p>
+        <footer ref={contactRef} className='bg-[#00000036]/35 backdrop-blur-md footer md:footer-center block '>
+            <div className=" p-5  px-8 pb-7 text-primary-content flex flex-col  md:flex-row items-center justify-center">
+                <div className="flex flex-col  text-2xl text-slate-100">
+                    <p className="text-4xl font-bold text-slate-50 pb-5 w-full text-center">Lets Connect</p>
+                    <div className='flex'>                   
+                    <a href={`mailto:${myEmail}`} target="blank" className="mx-5 md:my-8">
+                        <img src={emailwhite} alt="email" className='h-[50px] ' />
+                    </a>
+                    <a href="https://www.linkedin.com/in/vivian-lopes-44094798/" target="blank" className="mx-5 md:my-8">
+                        <img src={linkedinwhite} alt="linkedin" className='h-[50px]' />
+                    </a>
+                    <a href='https://github.com/8055-NVW' target="blank" className="mx-5 md:my-8">
+                        <img src={githubwhite} alt="github" className='svg h-[50px]' />
+                    </a>
+                    </div>
+                    {/* <div className='cursor'></div> */}
+                </div>
+                <div className="border-2 w-60 md:h-[300px] md:w-0 rounded-full my-5 md:mx-5"></div>
+                <div className='bg-[#000000ab] p-5 rounded-xl w-full max-w-[800px]'>
+                    <p className="text-lg font-semibold text-slate-50 w-full  text-center pb-2">Get in Touch</p>
+
                     <form onSubmit={handleSubmit} className="emailForm text-slate-100">
                         <input
                             className='bg-black rounded w-full p-2 my-2 text-slate-100'
@@ -95,34 +111,22 @@ export default function Footer({contactRef}) {
                         >
                         </textarea>
                         <div className='flex w-full justify-center items-center'>
-                        <button 
-                            type="submit" 
-                            className="relative  inline-flex h-8 mt-3 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                            <span 
-                                className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span 
-                                className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                Send Email
-                            </span>
-                        </button>
+                            <button
+                                type="submit"
+                                className="relative  inline-flex h-8 mt-3 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                                <span
+                                    className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                                <span
+                                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                                    Send Email
+                                </span>
+                            </button>
                         </div>
                     </form>
                 </div>
-                <div className="border-2 w-60 md:h-[300px] md:w-0 rounded-full"></div>
-                <div className="flex flex-row md:flex-col text-2xl text-slate-100">
-                    <a href={`mailto:${myEmail}`} target="blank" className="mx-5 md:my-8">
-                        <img src={emailwhite} alt="email" className='h-[50px]' />
-                    </a>
-                    <a href="https://www.linkedin.com/in/vivian-lopes-44094798/" target="blank" className="mx-5 md:my-8">
-                        <img src={linkedinwhite} alt="linkedin" className='h-[50px]' />
-                    </a>
-                    <a href='https://github.com/8055-NVW' target="blank" className="mx-5 md:my-8">
-                        <img src={githubwhite} alt="github" className='svg h-[50px]' />
-                    </a>
-                    <div className='cursor'></div>
-                </div>
+
             </div>
-            <div className='w-full bg-white p-3'>
+            <div className='w-full  bg-white p-3'>
                 <p className="text-center text-black ">Made by Vivian.L</p>
             </div>
             <ToastContainer />

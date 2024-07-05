@@ -5,7 +5,7 @@ export default function Experience({ expRef }) {
 
   return (
     <div ref={expRef} className="h-full flex flex-col items-center pb-20">
-      <h1 className="text-4xl p-5 mt-2 font-bold underline text-center text-slate-50">
+      <h1 className="text-4xl p-5 mt-2 font-bold text-center text-slate-50">
         Experience
         {/* [#00000036]/35 backdrop-blur-md */}
       </h1>

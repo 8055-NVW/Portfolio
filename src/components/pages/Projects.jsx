@@ -8,7 +8,6 @@ import MovieGallery from '../../assets/MovieGallery.webm'
 import Pedal from '../../assets/Pedal.webm'
 import BlendBay from '../../assets/BlendBay.webm'
 import vite from '../../assets/vite.svg'
-import vscode from '../../assets/vscode.svg'
 import react from '../../assets/react.svg'
 import trello from '../../assets/trello.svg'
 import tableplus from '../../assets/tableplus.svg'
@@ -28,7 +27,7 @@ import html from '../../assets/html-5.svg'
 import css from '../../assets/css-3.svg'
 import cloudinary from '../../assets/cloudinary.svg'
 import bootstrap from '../../assets/bootstrap.svg'
-import link from '../../assets/link.png'
+import link from '../../assets/link.svg'
 import githubwhite from '../../assets/githubwhitesvg.svg'
 
 export default function Projects({ projectsRef }) {
@@ -40,9 +39,9 @@ export default function Projects({ projectsRef }) {
 
     return (
         <div ref={projectsRef} className='h-full bg-black flex flex-col items-center pb-5'>
-            <h1 className="text-4xl font-bold underline m-3 mb-[1.5em]  pt-20 text-center text-slate-100">Projects</h1>
+            <h1 className="text-4xl font-bold m-3 mb-[1.5em]  pt-20 text-center text-slate-100">Projects</h1>
             {/* Frogger */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right">
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Frogger</h3>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
@@ -75,27 +74,27 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className=' mx-5 my-10 flex items-center justify-center'>
                     <a href="https://project-1-frogger.netlify.app/" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                Open Project
-                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className=' grow pb-[.8px]'>Site</p>
+                                <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Frogger Game" />
                             </span>
                         </button>
                     </a>
                     <a href="https://github.com/8055-NVW/Project-1-Frogger" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                View on GitHub
-                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className='grow pb-[.8px]'>Code</p>
+                                <img src={githubwhite} className=" h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
                             </span>
                         </button>
                     </a>
                 </div>
             </div>
             {/* Movie Gallery */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-xl shadow-slate-600' data-aos="fade-left">
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-xl shadow-slate-600' data-aos="fade-left" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Movie Gallery</h3>
                     <h4 className='text-xl'>Partner Project | Two Days</h4>
@@ -123,38 +122,36 @@ export default function Projects({ projectsRef }) {
                     </div>
                     <div className='ml-5 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
-                            A React based website that consumes an API and utilises Bootstrap Framework.
+                            A React-based website that consumes an API and utilizes the Bootstrap framework, Movie Gallery lets users like movies and add them to their watch lists.
                         </p>
                         <p className='md:text-lg'>
-                            Movie Gallery is a place where users can like movies and add them to their watch lists. We also incorporated a search bar to allow users to filter by category.
-
+                            We also incorporated a search bar to allow users to filter by category.
                         </p>
-
                     </div>
                 </div>
                 <div className=' mx-5 my-10 flex items-center justify-center'>
                     <a href="https://6628db1561b28c07a2f00c15--zesty-cheesecake-010dd6.netlify.app/" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                Open Project
-                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className=' grow pb-[.8px]'>Site</p>
+                                <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Movie Gallery" />
                             </span>
                         </button>
                     </a>
                     <a href="https://github.com/8055-NVW/Project-2-React-Movie-API/tree/main" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                View on GitHub
-                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className='grow pb-[.8px]'>Code</p>
+                                <img src={githubwhite} className=" h-8 ml-3 p-[1px] bg-white rounded-full" alt="Movie Gallery" />
                             </span>
                         </button>
                     </a>
                 </div>
             </div>
             {/* Pedal */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right">
+            <div className='h-full max-w-3xl  flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-right" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>Pedal</h3>
                     <h4 className='text-xl'>Group Project | One Week</h4>
@@ -176,13 +173,11 @@ export default function Projects({ projectsRef }) {
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='mr-5 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
-                            A social network like clone for car enthusiasts.
-                            Pedal lets users add, comment on, like, update, and delete posts, as well as add and delete their cars, which are viewable on their profiles, and follow other users.
+                            Pedal is a social network for car enthusiasts. Users can manage posts, cars, and profiles, and follow others.
                         </p>
                         <p className='md:text-lg'>
 
-                            Project 3 introduced new challenges, including our first use of the MERN stack with comprehensive CRUD operations and collaboration in a three-member team,
-                            requiring effective GitHub navigation to enhance both technical skills and teamwork.
+                            Project 3 introduced the MERN stack, CRUD operations, and teamwork in a three-member team, enhancing skills in GitHub navigation and collaboration.
                         </p>
 
                     </div>
@@ -199,27 +194,27 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='mx-5 my-10 flex items-center justify-center'>
                     <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                Open Project
-                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className=' grow pb-[.8px]'>Site</p>
+                                <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Pedal" />
                             </span>
                         </button>
                     </a>
                     <a href="https://github.com/8055-NVW/Project-3-Pedal" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                View on GitHub
-                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className='grow pb-[.8px]'>Code</p>
+                                <img src={githubwhite} className=" h-8 ml-3 p-[1px] bg-white rounded-full" alt="Pedal" />
                             </span>
                         </button>
                     </a>
                 </div>
             </div>
             {/* Blend Bay */}
-            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-left">
+            <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-xl shadow-slate-600' data-aos="fade-left" data-aos-duration="500">
                 <div className='mb-5'>
                     <h3 className='text-3xl mb-4 underline underline-offset-4'>BlendBay</h3>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
@@ -237,6 +232,7 @@ export default function Projects({ projectsRef }) {
                         <img className='h-10 p-1' src={postman} alt="postman" />
                         <img className='h-10 p-1' src={tableplus} alt="tableplus" />
                         <img className='h-10 p-1' src={heroku} alt="heroku" />
+                        <img className='h-10 p-1' src={trello} alt="trello" />
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
@@ -252,11 +248,10 @@ export default function Projects({ projectsRef }) {
                     </div>
                     <div className='ml-5 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
-                            Blend Bay is a website for shake lovers to like, share, review, and rate shakes of all kinds, inspired by a Banana Vanilla Protein Shake.
+                            Blend Bay is a website for shake lovers to review, rate, and favorite shakes.
                         </p>
                         <p className='md:text-lg'>
-                            For my final project, I decided to expand on Project 3, incorporating Python and Django for the back end and React with MaterialUI for the front end,
-                            to create a comprehensive shake website where users can create, update, delete, and favorite shakes.
+                            For my final project, I expanded on Project 3, using Python and Django for the back end, and React with MaterialUI for the front end, to create a comprehensive shake website.
                         </p>
 
                     </div>
@@ -264,20 +259,20 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='mx-5 my-10 flex items-center justify-center'>
                     <a href="https://blend-bay-155603fbccf6.herokuapp.com/" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                Open Project
-                                <img src={link} className="h-6 ml-3" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className=' grow pb-[.8px]'>Site</p>
+                                <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Blend Bay" />
                             </span>
                         </button>
                     </a>
                     <a href="https://github.com/8055-NVW/Project-4-Blend-Bay" target="_blank">
-                        <button className="mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                View on GitHub
-                                <img src={githubwhite} className="h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
+                            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
+                                <p className='grow pb-[.8px]'>Code</p>
+                                <img src={githubwhite} className=" h-8 ml-3 p-[1px] bg-white rounded-full" alt="Blend Bay" />
                             </span>
                         </button>
                     </a>
