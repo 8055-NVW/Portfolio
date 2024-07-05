@@ -126,8 +126,8 @@ export default function Footer({ contactRef }) {
                 </div>
 
             </div>
-            <div className='w-full  bg-white p-3'>
-                <p className="text-center text-black ">Made by Vivian.L</p>
+            <div className='w-full flex items-center justify-center  bg-white p-3'>
+                <p className=" text-black ">Made by Vivian.L</p>
             </div>
             <ToastContainer />
         </footer>

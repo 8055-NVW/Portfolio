@@ -10,7 +10,7 @@ export default function Experience({ expRef }) {
       </h1>
       <div className='w-full  flex flex-row items-center justify-around'>
         <img src={arrowleft} alt="left" className='h-6' />
-        <p className='text-md font-semibold pb-1 px-1'>Swipe</p>
+        <p className='text-lg font-semibold pb-1 px-1 '>Swipe</p>
         <img src={arrowright} alt="right" className='h-6' />
       </div>
       <div className="w-full px-2 carousel carousel-center rounded-box max-w-[95vw]  md:max-w-6xl space-x-4 p-4 bg-">
