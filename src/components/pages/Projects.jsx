@@ -80,7 +80,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className=' mx-5 mb-10 flex items-center justify-center'>
+                <div className=' mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://project-1-frogger.netlify.app/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -141,7 +141,7 @@ export default function Projects({ projectsRef }) {
                         </p>
                     </div>
                 </div>
-                <div className=' mx-5 mb-10 flex items-center justify-center'>
+                <div className='mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://6628db1561b28c07a2f00c15--zesty-cheesecake-010dd6.netlify.app/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -208,7 +208,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className='mx-5 mb-10 flex items-center justify-center'>
+                <div className='mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -275,7 +275,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className='mx-5 mb-10 flex items-center justify-center'>
+                <div className='mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://blend-bay-155603fbccf6.herokuapp.com/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
