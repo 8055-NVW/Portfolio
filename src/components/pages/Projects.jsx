@@ -77,7 +77,7 @@ export default function Projects({ projectsRef }) {
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
-                                <p className=' grow pb-[.8px]'>Site</p>
+                                <p className=' grow pb-[.8px] pl-2'>Project</p>
                                 <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Frogger Game" />
                             </span>
                         </button>
@@ -86,7 +86,7 @@ export default function Projects({ projectsRef }) {
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
-                                <p className='grow pb-[.8px]'>Code</p>
+                                <p className='grow pb-[.8px] pl-1'>Github</p>
                                 <img src={githubwhite} className=" h-8 ml-3 p-[1px] bg-white rounded-full" alt="Frogger Game" />
                             </span>
                         </button>
@@ -134,7 +134,7 @@ export default function Projects({ projectsRef }) {
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-2 py-1 text-md font-medium text-white backdrop-blur-3xl">
-                                <p className=' grow pb-[.8px]'>Site</p>
+                                <p className=' grow pb-[.8px] pl-2'>Project</p>
                                 <img src={link} className="h-8 ml-3 p-[3px] border-2 rounded-full" alt="Movie Gallery" />
                             </span>
                         </button>
