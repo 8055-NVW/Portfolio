@@ -80,7 +80,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className=' mx-5 my-10 flex items-center justify-center'>
+                <div className=' mx-5 mb-10 flex items-center justify-center'>
                     <a href="https://project-1-frogger.netlify.app/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -107,7 +107,7 @@ export default function Projects({ projectsRef }) {
                     <div className='flex items-center justify-center'>
 
                         <h3 className='text-3xl mb-4'>Movie Gallery</h3>
-                        <img src={movies} alt="a frog icon designed by Good Ware" className='h-8 mx-3 mb-4' />
+                        <img src={movies} alt="a movie reel icon designed by Smashicons" className='h-8 mx-3 mb-4' />
                     </div>
                     <h4 className='text-xl'>Partner Project | Two Days</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
@@ -141,7 +141,7 @@ export default function Projects({ projectsRef }) {
                         </p>
                     </div>
                 </div>
-                <div className=' mx-5 my-10 flex items-center justify-center'>
+                <div className=' mx-5 mb-10 flex items-center justify-center'>
                     <a href="https://6628db1561b28c07a2f00c15--zesty-cheesecake-010dd6.netlify.app/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -167,7 +167,7 @@ export default function Projects({ projectsRef }) {
                 <div className='mb-5'>
                     <div className='flex items-center justify-center'>
                         <h3 className='text-3xl mb-4'>Pedal</h3>
-                        <img src={pedal} alt="a frog icon designed by Good Ware" className='h-9 mx-3 mb-4' />
+                        <img src={pedal} alt="a pedal icon designed by Freepik" className='h-9 mx-3 mb-4' />
                     </div>
                     <h4 className='text-xl'>Group Project | One Week</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
@@ -208,7 +208,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className='mx-5 my-10 flex items-center justify-center'>
+                <div className='mx-5 mb-10 flex items-center justify-center'>
                     <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -234,7 +234,7 @@ export default function Projects({ projectsRef }) {
                 <div className='mb-5'>
                     <div className='flex items-center justify-center'>
                         <h3 className='text-3xl mb-4'>BlendBay</h3>
-                        <img src={milkshake} alt="a frog icon designed by Good Ware" className='h-8 mx-1 mb-4' />
+                        <img src={milkshake} alt="a shake icon designed by SetitikPixelStudio" className='h-8 mx-1 mb-4' />
                     </div>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
@@ -275,7 +275,7 @@ export default function Projects({ projectsRef }) {
                     </div>
 
                 </div>
-                <div className='mx-5 my-10 flex items-center justify-center'>
+                <div className='mx-5 mb-10 flex items-center justify-center'>
                     <a href="https://blend-bay-155603fbccf6.herokuapp.com/" target="_blank">
                         <button className="w-28 mx-4 relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none hover:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
