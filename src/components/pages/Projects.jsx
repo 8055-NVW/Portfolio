@@ -29,6 +29,10 @@ import cloudinary from '../../assets/cloudinary.svg'
 import bootstrap from '../../assets/bootstrap.svg'
 import link from '../../assets/link.svg'
 import githubwhite from '../../assets/githubwhitesvg.svg'
+import movies from '../../assets/movies.png'
+import pedal from '../../assets/pedal.png'
+import frog from '../../assets/frog.png'
+import milkshake from '../../assets/milkshake.png'
 
 export default function Projects({ projectsRef }) {
 
@@ -43,7 +47,10 @@ export default function Projects({ projectsRef }) {
             {/* Frogger */}
             <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
-                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Frogger</h3>
+                    <div className='flex items-center justify-center'>
+                        <h3 className='text-3xl mb-4'>Frogger</h3>
+                        <img src={frog} alt="a frog icon designed by Good Ware" className='h-8 mx-3 mb-4' />
+                    </div>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
                         <img className='h-10 p-1' src={html} alt="html" />
@@ -53,7 +60,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='flex p-2' >
+                    <div className='flex p-2 pb-5' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -97,7 +104,11 @@ export default function Projects({ projectsRef }) {
             {/* Movie Gallery */}
             <div className=' max-w-3xl flex flex-col text-center rounded-2xl my-20 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
-                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Movie Gallery</h3>
+                    <div className='flex items-center justify-center'>
+
+                        <h3 className='text-3xl mb-4'>Movie Gallery</h3>
+                        <img src={movies} alt="a frog icon designed by Good Ware" className='h-8 mx-3 mb-4' />
+                    </div>
                     <h4 className='text-xl'>Partner Project | Two Days</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
                         <img className='h-10 p-1' src={html} alt="html" />
@@ -111,7 +122,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='flex p-2' >
+                    <div className='flex p-2 pb-5' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -154,7 +165,10 @@ export default function Projects({ projectsRef }) {
             {/* Pedal */}
             <div className='h-full max-w-3xl  flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
-                    <h3 className='text-3xl mb-4 underline underline-offset-4'>Pedal</h3>
+                    <div className='flex items-center justify-center'>
+                        <h3 className='text-3xl mb-4'>Pedal</h3>
+                        <img src={pedal} alt="a frog icon designed by Good Ware" className='h-9 mx-3 mb-4' />
+                    </div>
                     <h4 className='text-xl'>Group Project | One Week</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
                         <img className='h-10 p-1' src={html} alt="html" />
@@ -172,7 +186,7 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
-                    <div className='flex p-2' >
+                    <div className='flex p-2 pb-5' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
@@ -218,7 +232,10 @@ export default function Projects({ projectsRef }) {
             {/* Blend Bay */}
             <div className='max-w-3xl flex flex-col text-center rounded-2xl my-5 p-2 shadow-2xl shadow-slate-600' data-aos="fade-up" data-aos-duration="500">
                 <div className='mb-5'>
-                    <h3 className='text-3xl mb-4 underline underline-offset-4'>BlendBay</h3>
+                    <div className='flex items-center justify-center'>
+                        <h3 className='text-3xl mb-4'>BlendBay</h3>
+                        <img src={milkshake} alt="a frog icon designed by Good Ware" className='h-8 mx-1 mb-4' />
+                    </div>
                     <h4 className='text-xl'>Solo Project | One Week</h4>
                     <div className='text-xl mt-4 px-5 flex flex-wrap justify-center items-center'>
                         <img className='h-10 p-1' src={html} alt="html" />
@@ -238,13 +255,12 @@ export default function Projects({ projectsRef }) {
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row p-2'>
-                    <div className='flex p-3 md:p-0' >
+                    <div className='flex p-3 pb-5' >
                         <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
-                            loop
-                        >
+                            loop>
                             <source src={BlendBay} type="video/webm" />
                         </video>
                     </div>

@@ -83,22 +83,21 @@ export default function Experience({ expRef }) {
         </div>
         <div className="carousel-item">
           <div className=" max-w-sm md:max-w-3xl p-10 bg-[#000000ab] shadow-md mx-5 rounded-box">
-
             <ul className="list-disc list-outside mt-2 text-lg text-gray-400">
-              <li className="mb-2">
+              <li className="mb-8">
                 <p className="text-xl font-bold ">Line Technician</p>
                 <p className="text-lg font-semibold text-gray-300">Catalent Pharma Solutions, Swindon</p>
-                <p className="text-base font-light text-gray-400 border-b-4">DECEMBER 2017 - JANUARY 2019</p>
+                <p className="text-base font-light text-gray-400 pb-3 border-b-4">DECEMBER 2017 - JANUARY 2019</p>
               </li>
-              <li className="mb-2">
+              <li className="mb-8">
                 <p className="text-xl font-bold ">Able Bodied Seaman</p>
                 <p className="text-lg font-semibold text-gray-300">Iranian Offshore Oil Company, Persian Gulf</p>
-                <p className="text-base font-light text-gray-400 border-b-4">APRIL 2016 - MAY 2017</p>
+                <p className="text-base font-light text-gray-400 pb-3 border-b-4">APRIL 2016 - MAY 2017</p>
               </li>
-              <li className="mb-2">
+              <li className="mb-8">
                 <p className="text-xl font-bold ">Event Coordinator</p>
                 <p className="text-lg font-semibold text-gray-300">PhotoBooth Goa Ltd, Goa</p>
-                <p className="text-base font-light text-gray-400 border-b-4">JUNE 2015 - MARCH 2016</p>
+                <p className="text-base font-light text-gray-400 pb-3 border-b-4">JUNE 2015 - MARCH 2016</p>
               </li>
             </ul>
           </div>
