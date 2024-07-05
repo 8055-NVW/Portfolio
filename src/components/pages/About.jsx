@@ -1,8 +1,7 @@
-"use client";
-import { useRef } from "react"
-import { useEffect, useState } from "react";
-import { FlipWords } from "../ui/flip-words";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+// "use client"
+import { useEffect, useState } from "react"
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards"
+import TextTransition, { presets } from 'react-text-transition'
 
 // custom imports
 import printOne from '../../assets/printOne.jpg'
@@ -14,6 +13,18 @@ import printSix from '../../assets/printSix.jpg'
 import printSeven from '../../assets/printSeven.jpg'
 
 export default function About({ aboutRef }) {
+
+    const [index, setIndex] = useState(0)
+
+    const words = ['Software Engineer', 'Automotive-Enthusiast', 'Tech-Geek', '3D Printing Aficionado', 'Guitarist']
+
+    useEffect(() => {
+        const intervalId = setInterval(
+          () => setIndex((index) => index + 1),
+          1700, 
+        )
+        return () => clearTimeout(intervalId);
+      }, [])
 
     const projects = [
         {
@@ -50,15 +61,13 @@ export default function About({ aboutRef }) {
             pic: printSeven,
             title: "Spiral Vase",
         },
-    ];
+    ]
 
-    const words = ['Software Engineer', 'Automotive-Enthusiast', 'Tech-Geek', '3D Printing Aficionado', 'Guitarist']
-
-
+    
     return (
         <div ref={aboutRef} className=" bg-black w-full" >
             <div className="min-h-screen flex flex-col items-center justify-center pt-20 pb-10">
-                <FlipWords className='text-3xl md:text-4xl font-bold m-3   text-center' words={words} />
+                <TextTransition className='text-3xl md:text-4xl font-bold m-3 text-center' springConfig={presets.stiff}>{words[index % words.length]}</TextTransition>
                 <p className="w-full md:w-2/4 p-5 text-xl font-light text-center text-slate-100 leading-[2rem]">
                     I'm an innovative and proactive Full-Stack Developer with a strong grasp of software engineering principles.
                     I love working in teams and am dedicated to delivering high-quality code and user-friendly designs.

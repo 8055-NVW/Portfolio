@@ -27,8 +27,8 @@ export default function Landing({ landingRef }) {
 
     return (
         <>
-            <div ref={landingRef} className='min-h-screen h-full w-[98%] flex items-center justify-center flex-col'>
-                <div className='w-screen max-w-[1000px]  pb-[.5em] flex flex-col lg:flex-row items-center justify-center'>
+            <div ref={landingRef} className='min-h-screen h-full w-full flex items-center justify-center flex-col'>
+                <div className='w-full max-w-[1000px]  pb-[.5em] flex flex-col lg:flex-row items-center justify-center'>
                     <div className=' mx-5 w-full'>
                         <h1 id='text' className="landing-text text-5xl  md:text-6xl font-medium text-center text-slate-100 leading-[6rem]">
                             Hi!<br />

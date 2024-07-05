@@ -27,12 +27,12 @@ export default function Root() {
       expRef={expRef}
       contactRef={contactRef}
       />    
-      <BackgroundGradientAnimation/>    
+      {/* <BackgroundGradientAnimation/>     */}
       <Landing landingRef={landingRef} />
-      <About aboutRef={aboutRef}/>
-      <Skills skillsRef={skillsRef}/>
-      <Projects projectsRef={projectsRef}/>
-      <Experience expRef={expRef}/>
+      {/* <About aboutRef={aboutRef}/> */}
+      {/* <Skills skillsRef={skillsRef}/> */}
+      {/* <Projects projectsRef={projectsRef}/> */}
+      {/* <Experience expRef={expRef}/> */}
       <Footer contactRef={contactRef}/>
     </>
   )
