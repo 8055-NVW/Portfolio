@@ -72,10 +72,10 @@ export default function Projects({ projectsRef }) {
                     </div>
                     <div className='mx-3 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
-                            Inspired by the 80s classic arcade game "Frogger" the aim was to incorporate similar elements and visual cues for an authentic experience.
+                            Inspired by the 80s classic arcade game "Frogger" the aim here was to incorporate similar elements and visual cues for an authentic experience.
                         </p>
                         <p className='md:text-lg'>
-                            Although the visuals were not be the main focus, my primary goal here was to ensure the core functionality of the game is robust and mirrors the original.
+                            Although the visuals were not the main focus, my primary goal here was to ensure that the core functionality of the game is robust and mirrors the original.
                         </p>
                     </div>
 

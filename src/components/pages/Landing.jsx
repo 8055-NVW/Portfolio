@@ -30,10 +30,12 @@ export default function Landing({ landingRef }) {
             <div ref={landingRef} className='min-h-screen h-full w-full flex items-center justify-center flex-col'>
                 <div className='w-full max-w-[1000px]  pb-[.5em] flex flex-col  lg:flex-row items-center justify-center'>
                     <div className=' mx-5 w-full'>
-                        <h1 id='text' className="landing-text text-5xl  md:text-6xl font-medium text-center text-slate-100 leading-[6rem]">
-                            Hi!<br />
+                        <h1 id='text' className="playwrite-nz-400 landing-text text-5xl  md:text-6xl font-bold text-center text-white">
+                            Hi!
+                            <br/>
                             I'm Vivian
                         </h1>
+                        
                         <h2 className='text-4xl hidden md:hidden lg:block text-center text-slate-100 pt-10'>Full Stack Software Developer</h2>
                     </div>
                     <div className=' mx-5 w-full flex flex-col justify-center items-center border-l-none border-white lg:border-l-4'>
@@ -42,7 +44,7 @@ export default function Landing({ landingRef }) {
                                 <img src={profilePic} alt='A mug shot of me' />
                             </div>
                         </div>
-                        <h2 className='text-4xl text-center lg:hidden text-slate-100 pt-10'>Full Stack Software Developer</h2>
+                        <h2 className=' text-4xl text-center lg:hidden text-slate-100 pt-10'>Full Stack Software Developer</h2>
                     </div>
                 </div>
             </div>
