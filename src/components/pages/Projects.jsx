@@ -5,9 +5,12 @@ import 'aos/dist/aos.css'
 //Asset imports
 // import Frogger from '../../assets/Frogger.webm'
 import Frogger from '../../assets/Frogger.gif'
-import MovieGallery from '../../assets/MovieGallery.webm'
-import Pedal from '../../assets/Pedal.webm'
-import BlendBay from '../../assets/BlendBay.webm'
+// import MovieGallery from '../../assets/MovieGallery.webm'
+import MovieGallery from '../../assets/MovieGallery.gif'
+// import Pedal from '../../assets/Pedal.webm'
+import Pedal from '../../assets/Pedal.gif'
+// import BlendBay from '../../assets/BlendBay.webm'
+import BlendBay from '../../assets/BlendBay.gif'
 import vite from '../../assets/vite.svg'
 import react from '../../assets/react.svg'
 import trello from '../../assets/trello.svg'
@@ -36,7 +39,6 @@ import frog from '../../assets/frog.png'
 import milkshake from '../../assets/milkshake.png'
 
 export default function Projects({ projectsRef }) {
-
     useEffect(() => {
         // Animate on scroll effect
         Aos.init({ duration: 1000 })
@@ -62,16 +64,6 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        {/* <video 
-                            width="2500"
-                            className="object-cover border-2 border-gray-400 rounded-lg"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            preload="auto">
-                            <source src={Frogger} type="video/mp4" />
-                        </video> */}
                         <img src={Frogger} alt="Frogger Game" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
@@ -126,14 +118,15 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        <video width="2500"
+                        {/* <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
                             loop
                         >
                             <source src={MovieGallery} type="video/webm" />
-                        </video>
+                        </video> */}
+                        <img src={MovieGallery} alt="Movie Gallery Website" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
@@ -190,14 +183,15 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        <video width="2500"
+                        {/* <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
                             loop
                         >
                             <source src={Pedal} type="video/webm" />
-                        </video>
+                        </video> */}
+                        <img src={Pedal} alt="Pedal Website" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
@@ -259,13 +253,14 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-2'>
                     <div className='flex p-3 pb-5' >
-                        <video width="2500"
+                        {/* <video width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
                             loop>
                             <source src={BlendBay} type="video/webm" />
-                        </video>
+                        </video> */}
+                        <img src={BlendBay} alt="Blend Bay Website" width="2500"/>
                     </div>
                     <div className='mx-3  mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
