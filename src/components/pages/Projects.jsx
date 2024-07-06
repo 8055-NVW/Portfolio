@@ -62,11 +62,14 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        <video width="2500"
+                        <video 
+                            width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
                             loop
+                            playsInline
+                            preload="auto"
                         >
                             <source src={Frogger} type="video/mp4" />
                         </video>
@@ -79,7 +82,6 @@ export default function Projects({ projectsRef }) {
                             Although the visuals were not the main focus, my primary goal here was to ensure that the core functionality of the game is robust and mirrors the original.
                         </p>
                     </div>
-
                 </div>
                 <div className=' mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://project-1-frogger.netlify.app/" target="_blank">
