@@ -4,7 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 //Asset imports
 // import Frogger from '../../assets/Frogger.webm'
-import Frogger from '../../assets/Frogger.mp4'
+import Frogger from '../../assets/Frogger.gif'
 import MovieGallery from '../../assets/MovieGallery.webm'
 import Pedal from '../../assets/Pedal.webm'
 import BlendBay from '../../assets/BlendBay.webm'
@@ -62,17 +62,17 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        <video 
+                        {/* <video 
                             width="2500"
                             className="object-cover border-2 border-gray-400 rounded-lg"
                             autoPlay
                             muted
                             loop
                             playsInline
-                            preload="auto"
-                        >
+                            preload="auto">
                             <source src={Frogger} type="video/mp4" />
-                        </video>
+                        </video> */}
+                        <img src={Frogger} alt="Frogger Game" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
                         <p className='mb-3 md:text-lg'>
