@@ -4,7 +4,7 @@ import SplitType from 'split-type'
 import { gsap } from "gsap"
 
 // Custom Imports
-import profilePic from '../../assets/profile-pic.jpg'
+import me from '../../assets/me.jpg'
 
 export default function Landing({ landingRef }) {
 
@@ -41,7 +41,7 @@ export default function Landing({ landingRef }) {
                     <div className=' mx-5 w-full flex flex-col justify-center items-center border-l-none border-white lg:border-l-4'>
                         <div className="avatar my-5">
                             <div className="w-[17rem] rounded-3xl">
-                                <img src={profilePic} alt='A mug shot of me' />
+                                <img src={me} alt='A mug shot of me' />
                             </div>
                         </div>
                         <h2 className=' text-4xl text-center lg:hidden text-slate-100 pt-10'>Full Stack Software Developer</h2>

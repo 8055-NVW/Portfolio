@@ -118,14 +118,6 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        {/* <video width="2500"
-                            className="object-cover border-2 border-gray-400 rounded-lg"
-                            autoPlay
-                            muted
-                            loop
-                        >
-                            <source src={MovieGallery} type="video/webm" />
-                        </video> */}
                         <img src={MovieGallery} alt="Movie Gallery Website" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
@@ -183,14 +175,6 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-3 md:p-0'>
                     <div className='flex p-2 pb-5' >
-                        {/* <video width="2500"
-                            className="object-cover border-2 border-gray-400 rounded-lg"
-                            autoPlay
-                            muted
-                            loop
-                        >
-                            <source src={Pedal} type="video/webm" />
-                        </video> */}
                         <img src={Pedal} alt="Pedal Website" width="2500"/>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
@@ -201,9 +185,7 @@ export default function Projects({ projectsRef }) {
 
                             Project 3 introduced the MERN stack, CRUD operations, and teamwork in a three-member team, enhancing skills in GitHub navigation and collaboration.
                         </p>
-
                     </div>
-
                 </div>
                 <div className='mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://project-pedal-035a309c1004.herokuapp.com/" target="_blank">
@@ -253,13 +235,6 @@ export default function Projects({ projectsRef }) {
                 </div>
                 <div className='flex flex-col md:flex-row p-2'>
                     <div className='flex p-3 pb-5' >
-                        {/* <video width="2500"
-                            className="object-cover border-2 border-gray-400 rounded-lg"
-                            autoPlay
-                            muted
-                            loop>
-                            <source src={BlendBay} type="video/webm" />
-                        </video> */}
                         <img src={BlendBay} alt="Blend Bay Website" width="2500"/>
                     </div>
                     <div className='mx-3  mb-5 text-center'>
@@ -269,9 +244,7 @@ export default function Projects({ projectsRef }) {
                         <p className='md:text-lg'>
                             For my final project, I expanded on Project 3, using Python and Django for the back end, and React with MaterialUI for the front end, to create a comprehensive shake website.
                         </p>
-
                     </div>
-
                 </div>
                 <div className='mx-5 mb-10 md:mt-5 flex items-center justify-center'>
                     <a href="https://blend-bay-155603fbccf6.herokuapp.com/" target="_blank">
