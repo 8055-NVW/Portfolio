@@ -3,7 +3,8 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 //Asset imports
-import Frogger from '../../assets/Frogger.webm'
+// import Frogger from '../../assets/Frogger.webm'
+import Frogger from '../../assets/Frogger.mp4'
 import MovieGallery from '../../assets/MovieGallery.webm'
 import Pedal from '../../assets/Pedal.webm'
 import BlendBay from '../../assets/BlendBay.webm'
@@ -67,7 +68,7 @@ export default function Projects({ projectsRef }) {
                             muted
                             loop
                         >
-                            <source src={Frogger} type="video/webm" />
+                            <source src={Frogger} type="video/mp4" />
                         </video>
                     </div>
                     <div className='mx-3 mb-5 text-center'>
