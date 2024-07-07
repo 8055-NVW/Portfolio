@@ -8,10 +8,10 @@ export default function Experience({ expRef }) {
       <h1 className="page-title text-4xl  my-4 font-bold text-center text-slate-50">
         Experience
       </h1>
-      <div className='w-full  flex flex-row items-center justify-around'>
-        <img src={arrowleft} alt="left" className='h-6' />
-        <p className='text-lg font-semibold pb-1 px-1 '>Swipe</p>
-        <img src={arrowright} alt="right" className='h-6' />
+      <div className='w-full  flex flex-row items-center justify-center'>
+        <img src={arrowleft} alt="left" className='h-5 animate-arrow-left' />
+        <p className='text-lg font-semibold pb-1 px-28 '>Swipe</p>
+        <img src={arrowright} alt="right" className='h-5 animate-arrow-right' />
       </div>
       <div className="w-full px-2 carousel carousel-center rounded-box max-w-[95vw]  md:max-w-6xl space-x-4 p-4 bg-">
         <div className="carousel-item">

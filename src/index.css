@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* landing text */
+/* custom Font */
 .playwrite-nz-400 {
   font-family: "Playwrite NZ", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+.root {
+  width: 100vw;
+}
+
+
 
 
 /* transition gsap text */
@@ -19,10 +25,6 @@
 
 .landing-text{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.root {
-  width: 100vw;
 }
 
 #text {
@@ -51,8 +53,34 @@
   padding-bottom: 11px;
 }
 
+/* about page text transition */
 .page-title {
   text-shadow: 0px 0px 20px rgba(255,255,255,0.71);
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes moveRightLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-arrow-left {
+  animation: moveLeftRight 1.5s ease-in-out infinite;
+}
+
+.animate-arrow-right {
+  animation: moveRightLeft 1.5s ease-in-out infinite;
 }
 
 @media screen and (max-width: 640px) {
