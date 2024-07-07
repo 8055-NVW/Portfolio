@@ -1,11 +1,6 @@
 import AnimatedCard from "../custom-components/3d-card-body"
 
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import vite from '../../assets/vite.svg'
-
-
 export default function Skills({ skillsRef }) {
-
 
     return (
         <div ref={skillsRef} className="min-h-screen pb-10">

@@ -1,8 +1,6 @@
-// "use client"
 import { useEffect, useState } from "react"
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards"
 import TextTransition, { presets } from 'react-text-transition'
-
 // custom imports
 import printOne from '../../assets/printOne.jpg'
 import printTwo from '../../assets/printTwo.jpg'
@@ -13,9 +11,8 @@ import printSix from '../../assets/printSix.jpg'
 import printSeven from '../../assets/printSeven.jpg'
 
 export default function About({ aboutRef }) {
-
+    // For text transition
     const [index, setIndex] = useState(0)
-
     const words = ['Software Engineer', 'Automotive-Enthusiast', 'Tech-Geek', '3D Printing Aficionado', 'Guitarist']
 
     useEffect(() => {
@@ -26,6 +23,7 @@ export default function About({ aboutRef }) {
         return () => clearTimeout(intervalId);
       }, [])
 
+    // for the infinite moving cards
     const projects = [
         {
             pic: printOne,
