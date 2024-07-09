@@ -65,7 +65,7 @@ export default function Footer({ contactRef }) {
         <footer ref={contactRef} className='bg-[#00000036]/35 backdrop-blur-md footer md:footer-center block '>
             <div className=" p-5  px-8 pb-7 text-primary-content flex flex-col  md:flex-row items-center justify-center">
                 <div className="flex flex-col  text-2xl text-slate-100">
-                    <p className="text-4xl font-bold text-slate-50 pb-5 w-full text-center">Lets Connect</p>
+                    <p className="text-4xl font-bold text-slate-50 pb-5 w-full text-center">Let's Connect</p>
                     <div className='flex'>                   
                     <a href={`mailto:${myEmail}`} target="blank" className="mx-5 md:my-8">
                         <img src={emailwhite} alt="email" className='h-[50px] ' />
