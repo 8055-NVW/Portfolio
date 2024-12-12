@@ -7,4 +7,5 @@ export default defineConfig({
   server: {
     host: true,
   },
+  base: './', // This is crucial for GitHub Pages
 })
